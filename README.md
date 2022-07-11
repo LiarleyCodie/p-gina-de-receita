@@ -1,5 +1,7 @@
-# Página de Receitas
-O projeto foi proposto pela [RocketSeat](https://www.rocketseat.com.br) como desafio do Discover
+# [Página de Receitas](https://liarleycodie.github.io/pagina-de-receita/)
+O projeto foi proposto pela [RocketSeat](https://www.rocketseat.com.br) como desafio do Discover.
+
+Você pode acessar a página clicando no título!
 
 Tornei todo o layout responsivo.
 
