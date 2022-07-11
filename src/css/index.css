@@ -1,3 +1,232 @@
+:root {
+    --body-color: #EAEAEA;
+    --recipe-color: #FFF;
+    --title-subtitles-color: #1B1B1B;
+    --footer-caption-color: #8F8F8F;
+    --texts: #39393A;
+    --rocketseat: #8257E5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+html,
+body {
+    min-height: 100vh;
+
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+
+    background: var(--body-color);
+}
+
 img {
     width: 100%;
+}
+
+/* -------------------- CONTAINER -------------------- */
+.container {
+    padding: 1rem 0;
+}
+
+/* -------------------- RECIPE CONTAINER -------------------- */
+.recipe-container {
+    background: var(--recipe-color);
+    text-align: center;
+    padding: 3rem 1rem;
+    border-radius: 1.2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    color: var(--title-subtitles-color);
+}
+
+/* -------------------- Título, imagem e descrição -------------------- */
+.recipe-container h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.recipe-container figure {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0 3rem;
+}
+
+.recipe-container figure img {
+    object-fit: cover;
+    height: 12rem;
+    border-radius: 0.4rem;
+}
+
+.recipe-container figure figcaption {
+    text-align: right;
+    font-size: 1.2rem;
+    margin-top: 0.4rem;
+    color: var(--footer-caption-color);
+    font-weight: 400;
+}
+
+/* -------------- Ingredientes, Modo de Preparo e Infos. Adicionais -------------- */
+.recipe-container h2 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.recipe-container h2:not(:first-of-type) {
+    margin-top: 3rem;
+}
+
+.recipe-container ul,
+.recipe-container ol {
+    padding: 0 1.4rem;
+    color: var(--texts);
+}
+
+.recipe-container ul li,
+.recipe-container ol li {
+    text-align: justify;
+    font-size: 1.6rem;
+    margin: 1.5rem 0;
+}
+
+.recipe-container p {
+    margin-top: 1.6rem;
+    text-align: justify;
+    font-size: 1.6rem;
+    color: var(--title-subtitles-color);
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+    padding: 3rem 0 2rem;
+    text-align: center;
+    color: var(--texts);
+}
+
+footer p {
+    font-size: 1.2rem;
+    opacity: 0.6;
+    transition: opacity 400ms;
+}
+
+footer p:hover {
+    opacity: 1;
+}
+
+footer p a {
+    color: var(--rocketseat);
+    font-weight: 700;
+    transition-property: background, color, border-radius, padding;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+}
+
+footer p a:hover {
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.4rem;
+    background: var(--rocketseat);
+    color: var(--body-color);
+}
+
+/* iPads & Tablets */
+@media screen and (min-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .recipe-container {
+        padding: 3rem 1rem;
+    }
+
+    .recipe-container figure img {
+        height: 16rem;
+    }
+
+    .recipe-container ul,
+    .recipe-container ol {
+        padding: 0 3rem;
+    }
+
+    .recipe-container ul li,
+    .recipe-container ol li {
+        margin: 3rem 0;
+    }
+
+    .recipe-container p {
+        padding: 0 1rem;
+    }
+}
+
+/* Telas pequenas & Laptops */
+@media screen and (min-width: 768px) {
+    .recipe-container figure img {
+        height: 20rem;
+    }
+
+    .recipe-container h2:not(:first-of-type) {
+        margin-top: 6rem;
+    }
+
+    .recipe-container ul,
+    .recipe-container ol {
+        padding: 0 6rem;
+    }
+
+    .recipe-container p {
+        text-align: center;
+    }
+}
+
+/* Desktops & Telas maiores */
+@media screen and (min-width: 1024px) {
+    .container {
+        padding: 4rem;
+    }
+
+    .recipe-container {
+        padding: 8rem 1rem 3rem;
+    }
+
+    .recipe-container h1 {
+        font-size: 4rem;
+    }
+
+    .recipe-container figure {
+        margin-top: 3rem;
+    }
+
+    .recipe-container figure img {
+        height: 40rem;
+        border-radius: 0.8rem;
+    }
+
+    .recipe-container h2 {
+        font-size: 3rem;
+    }
+
+    .recipe-container ul,
+    .recipe-container ol {
+        padding: 0 8rem;
+    }
+}
+
+/* Telas muito grande & TVs */
+@media screen and (min-width: 1200px) {
+    .container {
+        padding: 8rem 18rem;
+    }
+
+    .recipe-container figure img {
+        height: auto;
+        border-radius: 1rem;
+    }
 }
