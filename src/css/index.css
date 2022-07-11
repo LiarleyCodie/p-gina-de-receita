@@ -34,7 +34,7 @@ img {
 
 /* -------------------- CONTAINER -------------------- */
 .container {
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
 /* -------------------- RECIPE CONTAINER -------------------- */
@@ -87,7 +87,7 @@ img {
 
 .recipe-container ul,
 .recipe-container ol {
-    padding: 0 1.4rem;
+    padding: 0 2.4rem;
     color: var(--texts);
 }
 
@@ -99,6 +99,7 @@ img {
 }
 
 .recipe-container p {
+    padding: 0 1rem;
     margin-top: 1.6rem;
     text-align: justify;
     font-size: 1.6rem;
