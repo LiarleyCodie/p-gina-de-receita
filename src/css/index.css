@@ -168,6 +168,10 @@ footer p a:hover {
 
 /* Telas pequenas & Laptops */
 @media screen and (min-width: 768px) {
+    .container {
+        padding: 3rem 3rem;
+    }
+
     .recipe-container figure img {
         height: 20rem;
     }
@@ -193,7 +197,7 @@ footer p a:hover {
     }
 
     .recipe-container {
-        padding: 8rem 1rem 3rem;
+        padding: 8rem 2rem 3rem;
     }
 
     .recipe-container h1 {
@@ -223,6 +227,10 @@ footer p a:hover {
 @media screen and (min-width: 1200px) {
     .container {
         padding: 8rem 18rem;
+    }
+
+    .recipe-container {
+        padding: 8rem 3rem 3rem;
     }
 
     .recipe-container figure img {
